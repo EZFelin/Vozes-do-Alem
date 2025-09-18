@@ -18,8 +18,6 @@ function cadastrar(){
         });
     }
 
-
-
     function validarSenha() {
         const senha = document.getElementById("senha").value;
         const mensagem = document.getElementById("mensagem");

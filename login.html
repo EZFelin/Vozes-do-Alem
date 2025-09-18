@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  
+</head>
+
+  <body>
+    <!-- FORMULÁRIO -->
+    <div class="container">
+      <div class="login-box">
+        <!-- <div class="user-icon">
+        <img src="Icone-usuario-Png-1024x1024-removebg-preview.png" alt="Usuário">
+        </div> -->
+        <h2>Login</h2>
+        <div class="form-container">
+          <input type="text" id="email" placeholder="E-mail ou telefone">
+          <input type="password" id="senha" placeholder="Senha">
+          <button class="botao">Login</button>
+          <p class="back-to-login">
+            Ainda não tem conta?
+            <a href="cadastro.html">Cadastre-se</a> 
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+     <div class="navbar">
+        <img src="imagens/o-espreitador-24882596-210520231830.png" alt="Logo"> 
+          <div class="nav-links">
+            <button onclick="window.location.href='inicio.html'"> Inicio</button>
+            <button onclick="window.location.href='loja.html'"> Loja</button>
+            <button onclick="window.location.href='carrinho.html'"> Carrinho</button>
+            <button onclick="window.location.href='login.html'"> Login</button>
+          </div>
+        </div>
+      
+       
+
+  <script src="secrets.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="login.css"></script>
+
+</body>
+</html>

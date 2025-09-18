@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Comic Neue', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+  }
+  
+ 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1c1b1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px
+}
+
+.navbar img {
+  height: 200px;
+  width: auto;
+}
+
+.nav-links button {
+  background-color: #1e1e1e; /* fundo escuro */
+  color: #ffffff; /* texto branco */
+  border: 1px solid transparent;
+  padding: 10px 18px;
+  margin: 0 6px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
+}
+
+.nav-links button:hover {
+  background-color: #333333;
+  color: #FFD700; /* amarelo/dourado */
+  border-color: #FFD700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  transform: scale(1.05);
+}
+body {
+    background-color: #3e3d45;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    background-color: #2c2c38; /* fundo escuro */
+    color: #f5f5f5; /* texto claro */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.carrinho {
+    background-color: #333344; 
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.carrinho h2 {
+    margin-bottom: 15px;
+    color: #ffeb3b; /* destaque em amarelo */
+}
+
+.carrinho p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+button {
+  background-color: #1e1e1e; /* fundo escuro */
+  color: #ffffff; /* texto branco */
+  border: 1px solid transparent;
+  padding: 10px 18px;
+  margin: 0 6px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 5px rgba(255, 208, 208, 0.836);
+}
+button:hover {
+  background-color: #333333;
+  color: #FFD700; /* amarelo/dourado */
+  border-color: #FFD700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.item-carrinho {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #6e6b70;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.item-carrinho img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
