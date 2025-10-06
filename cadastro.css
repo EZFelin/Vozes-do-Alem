@@ -10,7 +10,7 @@ body {
   }
   
   .form-container {
-    background-color: #1e1e1e;
+    background-color: #1c1b1f;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(255,255,255,0.1);
@@ -39,7 +39,7 @@ body {
     margin-bottom: 15px;
     border-radius: 6px;
     border: none;
-    background-color: #333;
+    background-color: #4b4a51;
     color: white;
   }
   

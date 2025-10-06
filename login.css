@@ -138,3 +138,45 @@ body {
   color: #FFD700;
   text-decoration: underline;
 }
+
+.usuario-icone {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.usuario-icone span {
+  margin-left: 10px;
+}
+
+.botao-sair {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.botao-sair:hover {
+  background-color: #333333;
+  color: #FFD700; /* amarelo/dourado */
+  border-color: #FFD700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+  transform: scale(1.05);
+}
+

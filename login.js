@@ -1,34 +1,64 @@
-function cadastrar(){
-    const email = document.getElementById('email').value;
-    const senha = document.getElementById('senha').value;
-    
-    if(!email || !senha){
-        alert("Preencha todos os campos!");
-        return;
+function logar(){
+    const emailf = document.getElementById('email').value.trim();
+    const senhaf = document.getElementById('senha').value;
+
+    db.ref('Registrobanco').orderByChild('email').equalTo(emailf).once('value')
+    .then(snapshot => {
+        if (snapshot.exists()) {
+            const usuarios = snapshot.val();
+            let usuarioEncontrado = false;
+            for (let key in usuarios) {
+                if (usuarios[key].senha === senhaf) {
+                    usuarioEncontrado = true;
+                    const nomeUsuario = usuarios[key].nome;
+                    // Exibe o ícone e o nome do usuário
+                    exibirUsuario(nomeUsuario);
+                    localStorage.setItem('usuarioNome', nomeUsuario)
+                    document.getElementById('email').value = '';
+                    document.getElementById('senha').value = '';
+                    break;
+                }
+            }
+            if (!usuarioEncontrado) {
+                alert("Email ou senha incorretos.");
+            }
+        } else {
+            alert("Email não encontrado.");
+        }
+    });
+}
+
+function exibirUsuario(nome) {
+    const iconeExistente = document.querySelector('.usuario-icone');
+    if (iconeExistente) {
+        iconeExistente.remove();
     }
-    const registro = {
-        email,
-        senha
-    };
-    db.ref('RegistroLogin').push(registro)
-        .then(() => {
-            alert('Cadastro Concluído');
-            document.getElementById('email').value = '';
-            document.getElementById('senha').value = '';
-        });
+    // Cria o ícone de usuário no canto inferior direito
+    const usuarioIcone = document.createElement('div');
+    usuarioIcone.className = 'usuario-icone';
+    usuarioIcone.innerHTML = `<span>👤 ${nome}</span>`;
+
+    // Adiciona o ícone ao corpo da página
+    document.body.appendChild(usuarioIcone);
+}
+
+window.onload = () => {
+    const nomeSalvo = localStorage.getItem('usuarioNome');
+    if (nomeSalvo) {
+        exibirUsuario(nomeSalvo);
+    }
+};
+
+function logout() {
+    // Remove o nome salvo no localStorage
+    localStorage.removeItem('usuarioNome');
+
+    // Remove o ícone da tela, se existir
+    const iconeExistente = document.querySelector('.usuario-icone');
+    if (iconeExistente) {
+        iconeExistente.remove();
     }
 
-    function validarSenha() {
-        const senha = document.getElementById("senha").value;
-        const mensagem = document.getElementById("mensagem");
-        const temCaractereEspecial = /[!@#$%^&*()_\-+=\[\]{};':"\\|,.<>\/?]/;
-
-    if (!temCaractereEspecial.test(senha)){
-        mensagem.textContent ="A senha tem que ter pelo menos um caractér especial";
-        mensagem.style.color = "red";
-    } 
-    else {
-        mensagem.textContent = "Senha Validada";
-        mensagem.style.color = "green";
-    }
+    // (Opcional) Redirecionar para página de login
+    window.location.href = 'login.html';
 }

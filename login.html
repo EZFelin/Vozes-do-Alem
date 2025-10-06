@@ -20,9 +20,9 @@
         </div> -->
         <h2>Login</h2>
         <div class="form-container">
-          <input type="text" id="email" placeholder="E-mail ou telefone">
+          <input type="text" id="email" placeholder="E-mail">
           <input type="password" id="senha" placeholder="Senha">
-          <button class="botao">Login</button>
+          <button class="botao" onclick="logar()">Login</button>
           <p class="back-to-login">
             Ainda não tem conta?
             <a href="cadastro.html">Cadastre-se</a> 
@@ -40,12 +40,13 @@
             <button onclick="window.location.href='login.html'"> Login</button>
           </div>
         </div>
+        <button class="botao-sair" onclick="logout()">Sair</button>
       
        
 
   <script src="secrets.js"></script>
   <script src="firebase-config.js"></script>
-  <script src="login.css"></script>
+  <script src="login.js"></script>
 
 </body>
 </html>
