@@ -121,15 +121,15 @@ button:hover {
   display: flex;
   align-items: center;
   gap: 15px;
-  background: #6e6b70;
-  padding: 15px;
+  background: #1e1e1e;
+  padding: 30px;
   margin: 10px 0;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.4);
 }
 
 .item-carrinho img {
-  width: 80px;
+  width: 150px;
   height: auto;
   border-radius: 8px;
 }
