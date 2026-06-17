@@ -49,11 +49,11 @@ Este projeto possui fins educacionais e não tem vínculo oficial com o universo
 
 ## Screenshots
 
-![Vozes do alem](imagens/vozes do alem inicio.png)
-![Vozes do alem](imagens/vozes do alem loja.png)
-![Vozes do alem](imagens/vozes do alem carrinho.png)
-![Vozes do alem](imagens/vozes do alem login.png)
-![Vozes do alem](imagens/vozes do alem cadastro.png)
+![Vozes do alem](imagens/vozesdoaleminicio.png)
+![Vozes do alem](imagens/vozesdoalemloja.png)
+![Vozes do alem](imagens/vozesdoalemcarrinho.png)
+![Vozes do alem](imagens/vozesdoalemlogin.png)
+![Vozes do alem](imagens/vozesdoalemcadastro.png)
 
 
 ## Projeto Online
