@@ -41,7 +41,7 @@ Durante o projeto, aprendi a como fazer a estilização de um website, trabalhei
 
 ## O que faltou?
 
-Para o desenvolvimento de um méto de pagamento, necessitaria de mais conhecimento, pois no momento o sistema apenas simula uma compra através de clicks.
+Para o desenvolvimento de um método de pagamento, necessitaria de mais conhecimento, pois no momento o sistema apenas simula uma compra através de clicks.
 
 ## 📌 Observação
 
