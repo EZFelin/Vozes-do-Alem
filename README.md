@@ -46,3 +46,17 @@ Para o desenvolvimento de um método de pagamento, necessitaria de mais conhecim
 ## 📌 Observação
 
 Este projeto possui fins educacionais e não tem vínculo oficial com o universo **Ordem Paranormal**. Todo o conteúdo foi desenvolvido apenas para estudo e prática de desenvolvimento web.
+
+## Screenshots
+
+![Vozes do alem](imagens/vozes do alem inicio.png)
+![Vozes do alem](imagens/vozes do alem loja.png)
+![Vozes do alem](imagens/vozes do alem carrinho.png)
+![Vozes do alem](imagens/vozes do alem login.png)
+![Vozes do alem](imagens/vozes do alem cadastro.png)
+
+
+## Projeto Online
+
+https://ezfelin.github.io/Vozes-do-Alem/
+
